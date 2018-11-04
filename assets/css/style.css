@@ -1,0 +1,445 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+/**************************************************************************************/
+/******************************BACKGROUND IMAGE***************************************/
+/**************************************************************************************/
+.pimg1 {
+    position: relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url('../img/port-usmc-img.jpeg');
+    min-height: 100%;
+}
+/******************************************************************************************/
+/*******************************NAME & TITLE HEADER****************************************/
+/******************************************************************************************/
+.ptext-a {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext-a .border {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    opacity: 0.5;
+}
+
+.border1 {
+    background-color: #111;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    color: white;
+    font-size: 50px;
+    padding: 25px;
+    opacity: 0.75;
+    line-height: .75;
+}
+.border2 {
+    background-color: #111;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    opacity: 0.75;
+}
+/********************************************************************************************/
+/********************************MAIN NAVIGATION*********************************************/
+/*******************************************************************************************/
+.main-nav {
+    float: right;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.navlink {
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    color: red;
+    opacity: 0.95;
+}
+
+/***************************SOLID BACKGROUND FOR SECTIONS********************************/
+.framing {
+    background-color: #fff;
+    padding: 10px;
+    opacity: 1;
+}
+
+.framing-port {
+    background-color: #fff;
+    padding: 40px;
+    opacity: 1;
+}
+/***************************************************************************************/
+/***************************ABOUT ME SECTION********************************************/
+/***************************************************************************************/
+.section-about-me {
+    background-color: rgb(244,244,244, .65);
+    color: black;
+    text-align: center;
+    padding: 50px 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: none;
+}
+
+.section-about-me-show {
+    background-color: rgb(244,244,244, .65);
+    color: black;
+    text-align: center;
+    padding: 50px 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    animation-name: aboutMe;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutMe {
+    0% {left: -1000px;}
+    100% {left: 50%;}
+}
+/*************************************************************************************/
+/******************************PORTFOLIO SECTION**************************************/
+/*************************************************************************************/
+.section-portfolio {
+    background-color: rgb(244,244,244, .65);
+    color: black;
+    text-align: center;
+    padding: 50px 80px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 67%;
+    display: none;
+}
+
+.section-portfolio-show {
+    background-color: rgb(244,244,244, .65);
+    color: black;
+    text-align: center;
+    padding: 50px 80px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 67%;
+    animation-name: portfolio;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes portfolio {
+    0% {top: 2000px;}
+    100% {top: 60%;}
+}
+
+#h2-port {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Bree Serif', serif;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: 1rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, firebrick, #fd1d1d, rgba(191, 99, 6));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/***************************************************************************************/
+/***************************CONTACT SECTION********************************************/
+/***************************************************************************************/
+.section-contact {
+    background-color: rgb(244,244,244, .65);
+    color: black;
+    text-align: center;
+    padding: 50px 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: none;
+}
+
+.section-contact-show {
+    background-color: rgb(244,244,244, .65);
+    color: black;
+    text-align: center;
+    padding: 50px 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    animation-name: contact;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contact {
+    0% {left: -1000px;}
+    100% {left: 50%;}
+}
+
+
+
+
+
+
+/***************************************************************************************/
+/****************************PROJECT CARDS**********************************************/
+/**************************************************************************************/
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Grid Styles */
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3);
+    float: left;
+    margin-right: 4rem;
+}
+
+/* Project Card Styles */
+.project {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+}
+
+.project:hover .front-side {
+    transform: rotateY(-180deg);
+}
+
+.project:hover .back-side {
+    transform: rotateY(0);
+}
+
+.side {
+    height: 50rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.front-side-1 {
+    background-color: #fff;
+    border: solid 1rem firebrick;
+}
+
+.front-side-2 {
+    background-color: #fff;
+    border: solid 1rem #fd1d1d;
+}
+
+.front-side-3 {
+    background-color: #fff;
+    border: solid 1rem rgba(191, 99, 6);
+}
+
+.back-side {
+    transform: rotateY(180deg);
+    /* border: solid 1rem firebrick; */
+}
+
+.back-side-1 {
+    background-image: linear-gradient(to right bottom, white, firebrick);
+    border: solid 1rem firebrick;
+}
+
+.back-side-2 {
+    border: solid 1rem #fcb045;
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.back-side-3 {
+    background-image: linear-gradient(to right bottom, white, rgba(191, 99, 6));
+    border: solid 1rem rgba(191,99,6);
+}
+
+.project-img {
+    background-size: cover;
+    height: 26rem;
+}
+
+.project-img2 {
+    background-size: cover;
+    height: 24rem;
+}
+
+.project-img3 {
+    background-size: cover;
+    height: 26rem;
+}
+
+.project-details {
+    padding: 2rem;
+}
+
+.project-details ul {
+    list-style: none;
+    width: 100%;
+    margin-left: -4rem;
+}
+
+.project-details ul li {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.project-details ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.project-tech {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+
+.tech-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: #fff;
+}
+
+.tech-box p {
+    font-size: 1.4rem;
+}
+
+.img1 {
+    background-image: url("../img/fantasyTrader.jpg");
+}
+
+.img2 {
+    background-image: url("../img/insta.jpg");
+}
+
+.img3 {
+    background-image: url("../img/newTrivia.jpg");
+}
+
+/* BUTTONS */
+
+.btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem; 
+}
+  
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
+}
+    
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; 
+}
+  
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
+}
+  
+.btn--white {
+    background-color: #fff;
+    color: firebrick; 
+}
+    
+.btn--white::after {
+    background-color: #fff; 
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; 
+}
+  
+.btn--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards; 
+}
+
+
+
+
+
+
+
+
