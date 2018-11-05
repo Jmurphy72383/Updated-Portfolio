@@ -98,7 +98,7 @@ body {
 
 .framing-port {
     background-color: #fff;
-    padding: 40px;
+    padding: 15px;
     opacity: 1;
 }
 /***************************************************************************************/
@@ -149,7 +149,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 67%;
+    height: 62%;
     display: none;
 }
 
@@ -163,7 +163,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 67%;
+    height: 62%;
     animation-name: portfolio;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -177,7 +177,7 @@ body {
 #h2-port {
     font-size: 3rem;
     font-weight: 700;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Lato', sans-serif;
     text-transform: uppercase;
     margin: 0 auto;
     text-align: center;
@@ -222,12 +222,6 @@ body {
     0% {left: -1000px;}
     100% {left: 50%;}
 }
-
-
-
-
-
-
 /***************************************************************************************/
 /****************************PROJECT CARDS**********************************************/
 /**************************************************************************************/
@@ -256,7 +250,7 @@ body {
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 40rem;
 }
 
 .project:hover .front-side {
@@ -268,7 +262,7 @@ body {
 }
 
 .side {
-    height: 50rem;
+    height: 40rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -319,17 +313,17 @@ body {
 
 .project-img {
     background-size: cover;
-    height: 26rem;
+    height: 20rem;
 }
 
 .project-img2 {
     background-size: cover;
-    height: 24rem;
+    height: 20rem;
 }
 
 .project-img3 {
     background-size: cover;
-    height: 26rem;
+    height: 20rem;
 }
 
 .project-details {
@@ -437,8 +431,10 @@ body {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards; 
 }
-
-
+/***************************************************************************************/
+/****************************MEDIA QUERIES**********************************************/
+/**************************************************************************************/
+@media (max-width)
 
 
 
